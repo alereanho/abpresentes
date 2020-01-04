@@ -7,16 +7,9 @@
       .title
         h3 = product.title
       
-      .price
-        p 
-          - currency = data.settings.units.currency || '€' 
-          = currency + product.price.to_s 
           
           .link
         p 
-          = product.link.to_s 
+         <a href=" {= product.link.to_s} ">Compre Agora!</a>
           
-      .weight
-        p 
-          - weight = data.settings.units.weight || 'kg'
-          = product.weight.to_s + weight
+
