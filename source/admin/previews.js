@@ -33,7 +33,7 @@ const ProductPreview = ({ entry, widgetFor }) => {
             <span>{`${data.weight}kg`}</span>
           </div>
 <div className="link">
-            <span>{`${data.link}`}</span>
+            <span>{data.link}</span>
           </div>
           <div className="price">
             <span>{`€${data.price}`}</span>
