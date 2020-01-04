@@ -10,7 +10,10 @@
 
       .price
         - currency = data.settings.units.currency || '€' 
-        span = currency + product.price.to_s 
+        span = currency + product.price.to_s
+        
+      .link
+        span = product.link.to_s
 
     .body
       = markdown product.body
