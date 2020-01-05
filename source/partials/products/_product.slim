@@ -8,8 +8,8 @@
         h3 = product.title
       
           
-          .link
-        p 
-         <a href=" {= product.link.to_s} ">Compre Agora!</a>
+    .link
+      = link_to product.link.to_s + 'Compre Agora!' + '/'
+         
           
 
